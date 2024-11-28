@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate"
   },
   "exports": {
     "./client": "./index.ts"
@@ -13,6 +15,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "prisma": "^5.22.0"
+    "@prisma/client": "5.22.0"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
   }
 }
